@@ -3,56 +3,11 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Робот-пылесос - Умная уборка</title>
+  <title>Робот-пылесос</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div id="app">
-    <!-- Панель управления -->
-    <div id="dashboard">
-      <div class="panel">
-        <div class="panel-icon">🤖</div>
-        <div class="panel-info">
-          <div class="panel-label">Робот-пылесос</div>
-          <div class="panel-status" id="robotStatus">В работе</div>
-        </div>
-      </div>
-      
-      <div class="panel">
-        <div class="panel-icon">🔋</div>
-        <div class="panel-info">
-          <div class="panel-label">Заряд</div>
-          <div class="battery-bar">
-            <div class="battery-fill" id="batteryFill"></div>
-          </div>
-        </div>
-      </div>
-      
-      <div class="panel">
-        <div class="panel-icon">🧹</div>
-        <div class="panel-info">
-          <div class="panel-label">Собрано крошек</div>
-          <div class="panel-value" id="scoreValue">0</div>
-        </div>
-      </div>
-      
-      <div class="panel">
-        <div class="panel-icon">📍</div>
-        <div class="panel-info">
-          <div class="panel-label">Целей рядом</div>
-          <div class="panel-value" id="targetsNearby">0</div>
-        </div>
-      </div>
-    </div>
-    
-    <!-- Игровое поле -->
-    <div id="game-container">
-      <canvas id="gameCanvas"></canvas>
-      <div id="hint">
-        💡 Кликните левой кнопкой мыши, чтобы рассыпать крошки
-      </div>
-    </div>
-  </div>
+  <canvas id="gameCanvas"></canvas>
   <script src="script.js"></script>
 </body>
 </html>
